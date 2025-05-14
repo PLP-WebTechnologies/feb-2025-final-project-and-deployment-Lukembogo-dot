@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    background-color: orange; /* Set the background color to orange */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding around the entire page */
+    flex-direction: column; /* Stack items vertically */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .slider img {
+        max-width: 100%;
+    }
+}
+
+/* Image Slider */
+.slider {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px; /* Add spacing between the images */
+    margin-bottom: 40px; /* Add spacing between the slider and the footer */
+}
+
+.slider img {
+    width: 300px; /* Set a consistent width for all images */
+    height: 200px; /* Adjust the height to make it shorter */
+    object-fit: cover; /* Ensure the image fits within the specified dimensions */
+    transition: transform 0.5s ease;
+    border-radius: 8px; /* Optional: Add rounded corners for a polished look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better presentation */
+}
+
+.contact-form-section {
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+
+.navigation-buttons {
+    text-align: center; /* Center the navigation buttons */
+    margin-top: 20px; /* Add spacing above the buttons */
+    margin-bottom: 40px; /* Add spacing below the buttons */
+}
+
+.navigation-buttons button {
+    background-color: #333; /* Dark background for the buttons */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding for size */
+    margin: 0 10px; /* Add spacing between buttons */
+    font-size: 1rem; /* Adjust font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.navigation-buttons button:hover {
+    background-color: #555; /* Lighter background on hover */
+}
+
+.about-hero {
+    text-align: center; /* Center the text in the hero section */
+    margin-bottom: 20px; /* Add spacing below the hero section */
+}
+
+.about-content {
+    text-align: center; /* Center the text in the content section */
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.about-content article {
+    margin-bottom: 20px; /* Add spacing between articles */
+}
+
+.about-content ul {
+    list-style-position: inside; /* Ensure the bullet points are inside the content */
+    padding-left: 0; /* Remove default padding */
+    margin: 0 auto; /* Center the list */
+    text-align: left; /* Align the text to the left */
+}
+
+.about-content li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
